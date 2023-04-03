@@ -1,9 +1,13 @@
+* {
+    margin: 0 auto;
+}
+body {
+    background: url("./images/bg.jpg") top center;
+}
 .brown-sugar {
     color: brown;
     font-family: 'Roboto';
 }
-
-
 #table-yuk {
     margin-top: 20px;
     margin-right: 0px;
@@ -11,4 +15,47 @@
     margin-left: 100px;
     background-color: aqua;
     padding: 20px;
+}
+#box-head {
+    margin-top: 10px;
+    width: 900px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: block;
+}
+#box-body {
+    margin-top: 10px;
+    width: 900px;
+    background-color: #ffffff;
+    padding: 5px;
+    height: 300px;
+}
+.box {
+    margin-top: 10px;
+    width: 350px;
+    background-color: blanchedalmond;
+    margin-right: 10px;
+    float: left;
+    padding: 30px;
+}
+.clear {
+    float: clear;
+}
+p::first-letter {
+    font-size: xx-large;
+}
+div a {
+    color: black;
+}
+div a:hover {
+    color: red;
+}
+
+
+.daftar li {
+    display: inline;
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    color: #ffffff;
 }
