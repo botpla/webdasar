@@ -108,7 +108,7 @@ while($row = mysqli_fetch_array($result))
         <td><input type="hidden" name="id" value="<?php echo $_GET['id'];?>"></td>
         </div>
         <div class="mt-3">
-            <button class="btn btn-primary btn-large" type="submit" name="update" value="Update">Tambah</button>
+            <button class="btn btn-primary btn-large" type="submit" name="update" value="Update">Ubah</button>
         </div>
     </form>
 </div>
@@ -135,5 +135,14 @@ while($row = mysqli_fetch_array($result))
         })
         })()
     </script>
+    <script>// Check if query was successful or not
+if($result){
+    // Redirect to homepage to display updated user in list
+    header("Location: index.php");
+    echo "<script>alert('Data berhasil diubah!')</script>";
+} else {
+    // Display error message
+    echo "Error: " . mysqli_error($conn);
+}</script>
 </body>
 </html>

@@ -54,7 +54,7 @@
                 <td><?php echo $row['tgl_lahir'] ?></td>
                 <td><?php echo $row['alamat'] ?></td>
                 <td><a class="btn btn-small btn-warning" href="./edit.php?id=<?php echo $row['id'] ?>"><i class="bi bi-pencil-square"></i> Ubah</a> | 
-                    <a class="btn btn-small btn-danger" href="./hapus.php?id=<?php echo $row['id'] ?>"><i class="bi bi-trash"></i> Hapus</a></td>
+                    <a class="btn btn-small btn-danger"  href="./hapus.php?id=<?php echo $row['id'] ?>"><i class="bi bi-trash"></i> Hapus</a></td>
             </tr>
         <?php
                 }
